@@ -105,6 +105,7 @@
     h2{
         margin-top: 0;
     }
+
     .name{
         color:#00000000;
         background:linear-gradient(-45deg, rgb(206, 61, 255), orange);
