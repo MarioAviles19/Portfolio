@@ -42,6 +42,13 @@
  
 </div>
 
+<div class="contactInfo card">
+    <h2>Contact</h2>
+    <p>If you're looking to connect, feel free to reach out to me on LinkedIn or email me at
+        <a href="mailto:contact@marioaviles.com">Contact@MarioAviles.com</a>
+    </p>
+</div>
+
 <div class="projects">
     <h2>Projects</h2>
     <div class="projectCard">
@@ -95,7 +102,9 @@
 
 
 <style>
- 
+    h2{
+        margin-top: 0;
+    }
     .name{
         color:#00000000;
         background:linear-gradient(-45deg, rgb(206, 61, 255), orange);
@@ -166,13 +175,26 @@
         
         padding: .25rem;
 
-        border-radius: .75rem;
+        border-radius: .5rem;
         border: rgb(163, 163, 163) 3px solid;
         background-color: rgba(255, 255, 255, 0.033);
         transition: all 250ms ease;
         margin: 1rem 0;
     }
     .projectCard:hover{
+        box-shadow: 5px 5px 7px 7px rgb(17, 17, 17);
+    }
+    .card{
+        
+        padding: 1.25rem;
+
+        border-radius: .5rem;
+        border: rgb(163, 163, 163) 3px solid;
+        background-color: rgba(255, 255, 255, 0.033);
+        transition: all 250ms ease;
+        margin: 1rem 0;
+    }
+    .card:hover{
         box-shadow: 5px 5px 7px 7px rgb(17, 17, 17);
     }
     .projectCard .title{

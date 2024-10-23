@@ -11,5 +11,14 @@
 body{
     background: linear-gradient(black, rgb(55, 37, 55));
     color: rgb(222, 222, 222);
+    font-size: 1.2rem;
 
+}
+main{
+    width: clamp(10rem, 100%, 70rem);
+    margin:auto;
+
+}
+a{
+    color:white;
 }
