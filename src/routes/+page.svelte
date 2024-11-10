@@ -177,13 +177,19 @@
         padding: .25rem;
 
         border-radius: .5rem;
-        border: rgb(163, 163, 163) 3px solid;
-        background-color: rgba(255, 255, 255, 0.033);
+        background: linear-gradient(45deg, rgb(30, 30, 30) 0%, rgb(31, 31, 31) 50%, rgba(71,9,121,1) 63%, rgba(255,94,0,1) 100%);
+        background-size: 250%;
+        background-position: left top;
         transition: all 250ms ease;
+        box-shadow: 2px 2px 7px 7px rgba(17, 17, 17, 0.639);
+
         margin: 1rem 0;
     }
+    
     .projectCard:hover{
         box-shadow: 5px 5px 7px 7px rgb(17, 17, 17);
+        background-position: 20% 20%;
+        transform: translate(0, -3px);
     }
     .card{
         
