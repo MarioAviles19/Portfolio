@@ -44,9 +44,16 @@
 
 <div class="contactInfo card">
     <h2>Contact</h2>
-    <p>If you're looking to connect, feel free to reach out to me on LinkedIn or email me at
-        <a href="mailto:contact@marioaviles.com">Contact@MarioAviles.com</a>
-    </p>
+    <div class="">
+        <span class="smallHeading">Email</span>
+        <div class="contactLink"><a href="mailto:contact@marioaviles.com">Contact@MarioAviles.com</a></div>
+        <span class="smallHeading">LinkedIn</span>
+        <div class="contactLink"><a href="https://www.linkedin.com/in/mario-aviles-29441a281/">https://www.linkedin.com/in/mario-aviles-29441a281/</a></div>
+        <span class="smallHeading">Github</span>
+        <div class="contactLink">
+            <a  href="https://github.com/MarioAviles19">https://github.com/MarioAviles19</a>
+        </div>
+    </div>
 </div>
 
 <div class="projects">
@@ -64,10 +71,10 @@
 
             <div class="links">
                 <a target="_blank" href="https://github.com/MarioAviles19/PreLease" class="githubIcon">
-                    <Github color="rgb(163, 163, 163)" />
+                    <Github size={30} />
                 </a>
                 <a href="https://pl-rhc-data.firebaseapp.com" class="externIcon">
-                    <ExternalLink />
+                    <ExternalLink size={35}/>
                 </a>
             </div>  
         </div>
@@ -105,7 +112,15 @@
     h2{
         margin-top: 0;
     }
-
+    .smallHeading{
+        font-size: medium;
+        margin-bottom: 0;
+        display: block;
+    }
+    .contactLink{
+        margin-bottom: 1rem;
+        display: block;
+    }
     .name{
         color:#00000000;
         background:linear-gradient(-45deg, rgb(206, 61, 255), orange);
@@ -178,7 +193,7 @@
         padding: .25rem;
 
         border-radius: .5rem;
-        background: linear-gradient(45deg, rgb(30, 30, 30) 0%, rgb(31, 31, 31) 85%, rgba(71,9,121,1) 100%, rgba(255,94,0,1) 100%);
+        background: linear-gradient(45deg, rgb(36, 36, 36) 0%, rgb(31, 31, 31) 85%, rgba(71,9,121,1) 100%, rgba(255,94,0,1) 100%);
         background-position: left top;
         transition: all 250ms ease;
         box-shadow: 2px 2px 7px 7px rgba(17, 17, 17, 0.639);
@@ -196,9 +211,10 @@
         padding: 1.25rem;
 
         border-radius: .5rem;
-        border: rgb(163, 163, 163) 3px solid;
-        background-color: rgba(255, 255, 255, 0.033);
+        background-color: rgb(36, 36, 36);
         transition: all 250ms ease;
+        box-shadow: 2px 2px 7px 7px rgba(17, 17, 17, 0.639);
+
         margin: 1rem 0;
     }
     .card:hover{
@@ -244,8 +260,8 @@
         width:fit-content;
     }
     .githubIcon{
-        padding:.2rem;
-        border: rgb(163, 163, 163) solid 2px;
+        padding:.35rem;
+        border: white solid 3px;
         border-radius: 99rem;
         display: flex;
         align-items: center;
@@ -267,7 +283,7 @@
     }
     .externIcon{
 
-        color: rgb(163, 163, 163);
+        color: white;
         margin-right:1rem;
 
     }
