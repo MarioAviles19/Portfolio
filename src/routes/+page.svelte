@@ -26,7 +26,7 @@
 
     <h1 class="name">Mario Javier Aviles <span class="circle">&#9900;</span> Developer</h1>
     <p class="about">
-        Hi! I'm Mario, a web developer based in Minneapolis, MN looking to make my way into the web development industry.
+        Hi! I'm Mario, a web developer based in Minneapolis, MN with a passion for learning and taking on new challenges.
     </p>
     <div class="personalLinks">
         <a target="_blank" href="https://github.com/MarioAviles19" class="githubIcon">
@@ -172,13 +172,13 @@
         border-radius: .5rem;
 
     }
+
     .projectCard{
         
         padding: .25rem;
 
         border-radius: .5rem;
-        background: linear-gradient(45deg, rgb(30, 30, 30) 0%, rgb(31, 31, 31) 50%, rgba(71,9,121,1) 63%, rgba(255,94,0,1) 100%);
-        background-size: 250%;
+        background: linear-gradient(45deg, rgb(30, 30, 30) 0%, rgb(31, 31, 31) 85%, rgba(71,9,121,1) 100%, rgba(255,94,0,1) 100%);
         background-position: left top;
         transition: all 250ms ease;
         box-shadow: 2px 2px 7px 7px rgba(17, 17, 17, 0.639);
@@ -215,6 +215,8 @@
     .projectCard .body{
         margin-top: 0;
         padding:1rem;
+        font-size: medium;
+        font-weight: 300;
     }
     .projectCard .imageContainer{
         padding:1rem;

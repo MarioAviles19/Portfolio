@@ -20,6 +20,8 @@
         return z0; // Return a number from a standard normal distribution
     };
 
+    let speed = .002;
+
 
     function GeneratePoints(count : number, scale : number, density : number){
         let points : Array<{position : Array<number>, velocity : Array<number>, scale : number}> = []
@@ -35,9 +37,9 @@
             let y = randomGaussian() * scale
             let z = randomGaussian() * scale
 
-            let vx = randomGaussian() * .005
-            let vy = randomGaussian() * .005
-            let vz = randomGaussian() * .005
+            let vx = randomGaussian() * speed
+            let vy = randomGaussian() * speed
+            let vz = randomGaussian() * speed
 
             let objScale = Math.abs(randomGaussian() + 1)
 
@@ -49,12 +51,12 @@
         return points;
     }
     let rotationy = 0;
-    let speed = .01;
+    let rotSpeed = .02;
     let maxDistance = 25;
 
     let directionVec = new Vector3()
     useTask((del)=>{
-      rotationy += del * speed;
+      rotationy += del * rotSpeed;
       
       for (let i = 0; i < points.length; i++) {
         if(Math.abs(points[i].position[0]) + Math.abs(points[i].position[1]) + Math.abs(points[i].position[2]) > 20){
@@ -139,7 +141,7 @@
       <T.BoxGeometry args={[.02, .02, .02]} />
 
       {#each points as point, i}
-      <Instance position={point.position}  scale={points[i].scale}/>
+      <Instance position={point.position} rotation={[Math.random() * 360, Math.random() * 360, Math.random() * 360]}  scale={points[i].scale}/>
       {/each}
 
     </InstancedMesh>

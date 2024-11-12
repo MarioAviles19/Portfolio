@@ -9,8 +9,8 @@
 }
 
 body{
-    background: linear-gradient(black, rgb(55, 37, 55));
-    color: rgb(222, 222, 222);
+    background: linear-gradient(rgb(27, 27, 27), rgb(35, 20, 35));
+    color: rgb(247, 247, 247);
     font-size: 1.2rem;
 
 }
