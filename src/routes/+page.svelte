@@ -30,10 +30,10 @@
     </p>
     <div class="personalLinks">
         <a target="_blank" href="https://github.com/MarioAviles19" class="githubIcon">
-            <Github size={35} color="rgb(163, 163, 163)" />
+            <Github size={35} color="white" />
         </a>
         <a target="_blank" href="https://linkedin.com/in/mario-aviles-29441a281" class="linkedinIcon">
-            <Linkedin size={35}  color="rgb(163, 163, 163)" />
+            <Linkedin size={35}  color="white" />
         </a>
 
     </div>
@@ -46,12 +46,12 @@
     <h2>Contact</h2>
     <div class="">
         <span class="smallHeading">Email</span>
-        <div class="contactLink"><a href="mailto:contact@marioaviles.com">Contact@MarioAviles.com</a></div>
+        <div class="contactLink"><a target="_blank" href="mailto:contact@marioaviles.com">Contact@MarioAviles.com</a></div>
         <span class="smallHeading">LinkedIn</span>
-        <div class="contactLink"><a href="https://www.linkedin.com/in/mario-aviles-29441a281/">https://www.linkedin.com/in/mario-aviles-29441a281/</a></div>
+        <div class="contactLink"><a target="_blank" href="https://www.linkedin.com/in/mario-aviles-29441a281/">https://www.linkedin.com/in/mario-aviles-29441a281/</a></div>
         <span class="smallHeading">Github</span>
         <div class="contactLink">
-            <a  href="https://github.com/MarioAviles19">https://github.com/MarioAviles19</a>
+            <a target="_blank" href="https://github.com/MarioAviles19">https://github.com/MarioAviles19</a>
         </div>
     </div>
 </div>
@@ -61,7 +61,45 @@
     <div class="projectCard">
         <div class="cardHead">
             <div class="sideBySide">
-                <a href="https://pl-rhc-data.firebaseapp.com/">
+                <a target="_blank" href="https://pl-rhc-data.firebaseapp.com/">
+                    <div class="imageContainer">
+                        <img class="cardImage" src="ConwayLogo.svg" alt="Thumbnail showing the Conway Beats Website">
+                    </div>
+                </a>
+                <h3 class="title">Conway's Beats</h3>
+            </div>
+
+            <div class="links">
+                <a target="_blank" href="hhttps://github.com/MarioAviles19/Conways-Beats" class="githubIcon">
+                    <Github size={30} />
+                </a>
+                <a target="_blank" href="https://conways-beats.pages.dev/" class="externIcon">
+                    <ExternalLink size={35}/>
+                </a>
+            </div>  
+        </div>
+
+        <div class="info">
+
+
+
+                <p class="body">
+                    Built using Tone.Js and typescript, this is a fun little project that I put together after discussing the idea of using
+                    Conway's Game of Life to generate music with a friend. Although I mostly thought of it as little more than
+                    a novel way to use the Game of Life, I was surprized to see that the patterns that emerged actually created interesting drum lines.
+                    Especially when utilizing the ability to lock cells.
+                    <br>
+                    <br>
+                    It was a good opportunity to become more familiar with ToneJs and browser audio in general
+                    which I hope to do more with in the future.
+                </p>
+
+        </div>
+    </div>
+    <div class="projectCard">
+        <div class="cardHead">
+            <div class="sideBySide">
+                <a target="_blank" href="https://pl-rhc-data.firebaseapp.com/">
                     <div class="imageContainer">
                         <img class="cardImage" src="preleaseLogo.png" alt="Thumbnail showing the PreLease Website">
                     </div>
@@ -73,7 +111,7 @@
                 <a target="_blank" href="https://github.com/MarioAviles19/PreLease" class="githubIcon">
                     <Github size={30} />
                 </a>
-                <a href="https://pl-rhc-data.firebaseapp.com" class="externIcon">
+                <a href="https://pl-rhc-data.firebaseapp.com" target="_blank" class="externIcon">
                     <ExternalLink size={35}/>
                 </a>
             </div>  
@@ -101,6 +139,7 @@
 
         </div>
     </div>
+
 
    
 </div>
@@ -238,6 +277,7 @@
         padding:1rem;
         width:100%;
         height:100%;
+        min-width: 5rem;
         display: flex;
         justify-content: center;
         align-items: start;
