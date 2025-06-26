@@ -1,26 +1,7 @@
 <script lang=ts>
-    import { onMount } from "svelte";
-    import Expandable from "$lib/components/Expandable.svelte";
     import {Github, ExternalLink, Circle, ChevronsDown, Linkedin} from "lucide-svelte"
-    import Starfield from "$lib/components/Three/Starfield.svelte";
-    import ContactButton from "$lib/components/ContactButton.svelte";
-    import { draw } from "svelte/transition";
-    import { scrollPos } from "$lib/stores";
-
-    let scrollPosition = 0;
-    onMount(()=>{
-        scrollPos.set(scrollPosition)
-    })
-
-    $:scrollPos.set(scrollPosition);
-   
 </script>
 
-<svelte:window bind:scrollY={scrollPosition}/>
-
-<div class="background">
-    <Starfield/>
-</div>
 
 <div class="banner">
 
@@ -35,7 +16,6 @@
         <a target="_blank" href="https://linkedin.com/in/mario-aviles-29441a281" class="linkedinIcon">
             <Linkedin size={35}  color="white" />
         </a>
-
     </div>
   
 
@@ -84,14 +64,7 @@
 
 
                 <p class="body">
-                    Built using Tone.Js and typescript, this is a fun little project that I put together after discussing the idea of using
-                    Conway's Game of Life to generate music with a friend. Although I mostly thought of it as little more than
-                    a novel way to use the Game of Life, I was surprized to see that the patterns that emerged actually created interesting drum lines.
-                    Especially when utilizing the ability to lock cells.
-                    <br>
-                    <br>
-                    It was a good opportunity to become more familiar with ToneJs and browser audio in general
-                    which I hope to do more with in the future.
+                    Built after attending a jazz jam session with a friend, this is a little project that was a fun way to explore ToneJs and have fun with color themes.
                 </p>
 
         </div>
@@ -100,7 +73,7 @@
         <div class="cardHead">
             <div class="sideBySide">
                 <a target="_blank" href="https://pl-rhc-data.firebaseapp.com/">
-                    <div class="imageContainer">
+                    <div class="imageContainer ">
                         <img class="cardImage" src="preleaseLogo.png" alt="Thumbnail showing the PreLease Website">
                     </div>
                 </a>
@@ -111,7 +84,7 @@
                 <a target="_blank" href="https://github.com/MarioAviles19/PreLease" class="githubIcon">
                     <Github size={30} />
                 </a>
-                <a href="https://pl-rhc-data.firebaseapp.com" target="_blank" class="externIcon">
+                <a href="https://pl-rhc-data.firebaseapp.com" target="_blank" aria-hidden="true" class="externIcon hidden">
                     <ExternalLink size={35}/>
                 </a>
             </div>  
@@ -160,6 +133,10 @@
         margin-bottom: 1rem;
         display: block;
     }
+    .hidden{
+        opacity: 0;
+        pointer-events: none;
+    }
     .name{
         color:#00000000;
         background:linear-gradient(-45deg, rgb(206, 61, 255), orange);
@@ -186,13 +163,7 @@
         min-height: 100svh;
         
     }
-    .background{
-        position: fixed;
-        top:0;left:0;
-        height: 100lvh;
-        width: 100%;
-        z-index: -1;
-    }
+
     .imageContainer{
         position:relative;
         max-height: 100%;
@@ -292,7 +263,7 @@
     }
     .linkedinIcon{
         padding:.2rem;
-        border: rgb(163, 163, 163) solid 2px;
+        border: white solid 2px;
         border-radius: .25rem;
         display: flex;
         align-items: center;
