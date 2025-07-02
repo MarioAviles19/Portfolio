@@ -64,7 +64,9 @@
 
 
                 <p class="body">
-                    Built after attending a jazz jam session with a friend, this is a little project that was a fun way to explore ToneJs and have fun with color themes.
+                    Built after attending a jazz jam session with a friend, 
+                    this is a little project that was a fun introduction to ToneJs, which I plan to explore more in future projects, and have fun with color themes.
+
                 </p>
 
         </div>
