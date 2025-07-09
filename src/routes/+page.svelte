@@ -70,7 +70,7 @@
 
         </div>
     </div>
-    <div class="projectCard">
+    <div class="projectCard hidden">
         <div class="cardHead">
             <div class="sideBySide">
                 <a target="_blank" href="https://pl-rhc-data.firebaseapp.com/">
@@ -148,6 +148,9 @@
         margin-top:2rem;
         font-size:2.5rem;
 
+    }
+    .hidden{
+        display:none;
     }
     .about{
 
