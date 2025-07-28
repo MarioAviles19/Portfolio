@@ -60,14 +60,10 @@
         </div>
 
         <div class="info">
-
-
-
-                <p class="body">
-                    Built after attending a jazz jam session with a friend, 
-                    this is a little project that was a fun introduction to ToneJs, which I plan to explore more in future projects.
-                </p>
-
+            <p class="body">
+                Built after attending a jazz jam session with a friend, 
+                this is a little project that was a fun introduction to ToneJs, which I plan to explore more in future projects.
+            </p>
         </div>
     </div>
     <div class="projectCard hidden">

@@ -18,7 +18,7 @@
 
 <svelte:window bind:scrollY={scrollPosition}/>
 
-<div class="background">
+<div class="background" style="display: none;">
     <Starfield/>
 </div>
 
@@ -29,7 +29,7 @@
 
 <style>
     main{
-        padding:.25rem;
+       
     }
     .background{
         position: fixed;
